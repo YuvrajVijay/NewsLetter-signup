@@ -11,8 +11,8 @@ app.use(express.static("public"));
 
 
 mailchimp.setConfig({
-  apiKey: "51d693b5605a5fa6447828092db0f3f8-us7",
-  server: "us7",
+  apiKey: "Your API Key",
+  server: "Your server - suffix of api key",
 });
 
 
@@ -31,7 +31,7 @@ app.post("/",function(req,res){
   const lastName=req.body.lastName;
   const email=req.body.inputEmail;
   console.log(req.body);
-  const listId="84976ca0bb";
+  const listId="your ListId";
 
   const subscribingUser = {
  firstName: firstName,
